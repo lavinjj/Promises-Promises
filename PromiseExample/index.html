@@ -20,8 +20,8 @@
         <h2>Basic Promise Example</h2>
     </div>
     <hr />
-    <div class="well">
-        <div ng-bind="result">loading...</div>
+    <div class="well" ng-repeat="for message in messages">
+        <div ng-bind="message">loading...</div>
     </div>
     <div class="row-fluid">
       <button id="loadButton" class="btn btn-primary" ng-click="loadResult()">Load Page</button>
