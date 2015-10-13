@@ -1,0 +1,26 @@
+{
+  "name": "CallbackExample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lavinjj/Promises-Promises",
+  "authors": [
+    "Jim Lavin <jim.lavin@ordertalk.com>"
+  ],
+  "description": "Simple Callback Example",
+  "main": "",
+  "moduleType": [],
+  "license": "GPL3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}
