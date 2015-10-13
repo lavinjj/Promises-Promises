@@ -44,7 +44,7 @@ describe('People List Controller', function() {
     it('should call requestPeople on the people service when init is called',
 
         function() {
-            spyOn(peopleService, 'requestPeople').andCallThrough();
+            spyOn(peopleService, 'requestPeople').and.callThrough();
 
             scope.init();
 
