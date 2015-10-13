@@ -2,8 +2,8 @@
 <html lang="en" ng-app="myApp">
 <head>
     <meta charset="utf-8">
-    <title>Promise Example</title>
-    <meta name="description" content="Basic Promise Example">
+    <title>Promise All Example</title>
+    <meta name="description" content="Basic Promise All Example">
     <meta name="author" content="Jim Lavin">
     <!-- Le styles -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -17,15 +17,14 @@
 <body>
 <div class="container-fluid" ng-controller="myController">
     <div class="row-fluid">
-        <h2>Basic Promise Example</h2>
+        <h2>Basic Promise All Example</h2>
     </div>
     <hr />
-    <div class="well">
-        <div ng-bind="result">loading...</div>
+    <div class="well" ng-repeat="message in messages track by $index">
+        <div ng-bind="message">loading...</div>
     </div>
     <div class="row-fluid">
-      <button id="loadButton" class="btn btn-primary" ng-click="loadResult()">Load Page</button>
-      <button id="loadButton" class="btn btn-warning" ng-click="loadFailure()">Always Fails</button>
+        <button id="loadButton" class="btn btn-primary" ng-click="loadResult()">Load Page</button>
     </div>
 </div>
 <!-- Le javascript
